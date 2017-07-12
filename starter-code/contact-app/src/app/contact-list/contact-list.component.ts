@@ -18,7 +18,13 @@ export class ContactListComponent implements OnInit {
 
   addContact(){
     console.log("Add contact has been called");
+      console.log(this.newContact);
+      //adds the contact to the form
+      this.contacts.push(this.newContact);
     // add contact to contacts list
     // clear inputs
   }
+
 }
+
+// Using *ngFor, display the name, email, phoneNumber, and image of the contact.
